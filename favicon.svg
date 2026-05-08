@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path 
+    d="M75 30C75 16 58 10 45 10C32 10 25 18 25 30C25 45 75 55 75 70C75 82 58 90 45 90C32 90 25 84 25 70" 
+    stroke="url(#syl-gradient)" 
+    stroke-width="16" 
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <defs>
+    <linearGradient id="syl-gradient" x1="25" y1="10" x2="75" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8570FF" />
+      <stop offset="1" stop-color="#FF597B" />
+    </linearGradient>
+  </defs>
+</svg>
