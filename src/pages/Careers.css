@@ -28,26 +28,44 @@
 }
 
 .role-item {
-  padding: 32px 0;
   border-bottom: 1px dashed var(--glass-border);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.role-header {
+  padding: 32px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: padding 0.3s ease;
-  cursor: pointer;
 }
 
-.role-item:hover {
-  padding-left: 20px;
+.role-item:hover .role-header {
+  padding-left: 10px;
 }
 
 .role-item:hover .role-arrow path {
   stroke: var(--text-primary);
 }
 
+.role-item.expanded .role-arrow {
+  transform: rotate(90deg);
+}
+
+.role-item.expanded .role-arrow path {
+  stroke: var(--accent-color);
+}
+
 .role-main h3 {
   font-size: 1.5rem;
   margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.role-item.expanded .role-main h3 {
+  color: var(--accent-color);
 }
 
 .team-label {
@@ -60,9 +78,100 @@
   font-size: 0.95rem;
 }
 
+.role-arrow {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.role-content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.role-item.expanded .role-content {
+  max-height: 2000px;
+  opacity: 1;
+  padding-bottom: 40px;
+}
+
+.role-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.detail-section h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+
+.detail-section p {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-section li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.detail-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.role-footer {
+  margin-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 32px;
+}
+
+
+.apply-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
 @media (max-width: 1024px) {
   .careers-layout {
     grid-template-columns: 1fr;
     gap: 60px;
   }
 }
+
+@media (max-width: 768px) {
+  .role-main h3 {
+    font-size: 1.2rem;
+  }
+}
+

@@ -32,7 +32,8 @@ const Navbar = () => {
     { name: 'Blog', path: '/blog' },
     { name: 'Updates', path: '/updates' },
     { name: 'About', path: '/about' },
-    { name: 'Careers', path: '/careers', badge: '8' },
+    { name: 'Careers', path: '/careers', badge: '4' },
+
   ];
 
 

@@ -5,47 +5,26 @@ import { cn } from '@/lib/utils';
 const DEFAULT_MEMBERS = [
   {
     id: '1',
-    name: 'Chadrack',
-    role: 'director of photography',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQFnmLdpZW78yA/profile-displayphoto-scale_200_200/B4DZvM8NB2JMAY-/0/1768669895649?e=2147483647&v=beta&t=5VGAB-2gYupLNaHvJHECollR25THd-3oR5wngGlQiY4',
-    social: { twitter: '#', linkedin: '#', behance: '#' },
+    name: 'Akbor Chowdhury',
+    role: 'CO-FOUNDER',
+    image: '/akbor.png',
+    social: { linkedin: 'https://www.linkedin.com/in/akbor-chowdhury/' },
   },
+
   {
     id: '2',
-    name: 'Mak VieSAinte',
+    name: 'Dhebobrotha Dhibo',
     role: 'FOUNDER',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vnSxNNVGZV2MXRjlGELl-NgLl5kXdpDR6A&s',
-    social: { twitter: '#', linkedin: '#' },
+    image: '/dhibo.png',
+    social: { 
+      linkedin: 'https://www.linkedin.com/in/d3d34d/',
+      behance: 'https://d3-d34d.vercel.app/' 
+    },
   },
-  {
-    id: '3',
-    name: 'Osiris Balonga',
-    role: 'LEAD FRONT-END',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQGVqrPPAGHtoQ/profile-displayphoto-scale_200_200/B4DZwhAkjaHwAY-/0/1770080338529?e=2147483647&v=beta&t=q-_6p1VCJ8NN8eHj9zUFwJZds_XpKez9Hy14SAIDp4M',
-    social: { twitter: '#', linkedin: '#' },
-  },
-  {
-    id: '4',
-    name: 'Jacques',
-    role: 'PRODUCT OWNER',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQE-Z7-S1LSYNQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724143166545?e=2147483647&v=beta&t=6IPCwgOzblGt4p2fEdnY74gMbLyRHii5Ite3A39qQsY',
-    social: { linkedin: '#' },
-  },
-  {
-    id: '5',
-    name: 'Riche Makso',
-    role: 'CTO - PRODUCT DESIGNER',
-    image: 'https://media.licdn.com/dms/image/v2/D4D03AQEkTAbZLlSrLg/profile-displayphoto-scale_200_200/B4DZoHdu8BGgAY-/0/1761061833315?e=2147483647&v=beta&t=Rg1dBTvq9X2heyhuhBwG2DsEkG65v0vQ35hF2FSeYns',
-    social: { twitter: '#', linkedin: '#' },
-  },
-  {
-    id: '6',
-    name: 'Jemima',
-    role: 'MAKE-UP ARTISTE',
-    image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=400&h=400&auto=format&fit=crop',
-    social: { instagram: '#' },
-  },
+
 ];
+
+
 
 export default function TeamShowcase({ members = DEFAULT_MEMBERS }) {
   const [hoveredId, setHoveredId] = useState(null);

@@ -8,9 +8,11 @@ import Updates from './pages/Updates';
 import About from './pages/About';
 
 import Careers from './pages/Careers';
+import Apply from './pages/Apply';
 import Contact from './pages/Contact';
 import Waitlist from './pages/Waitlist';
 import { Privacy, Terms, Cookies } from './pages/Legal';
+
 
 import { SylLogo, SylWatermark } from './components/SylLogo';
 import { useGlobalScramble } from './hooks/useGlobalScramble';
@@ -26,12 +28,14 @@ const Footer = () => (
         </Link>
       </div>
 
-      <div className="footer-nav" style={{ display: 'flex', gap: '32px' }}>
+      <div className="footer-nav" style={{ display: 'flex', gap: '32px', flexWrap: 'wrap' }}>
         <Link to="/about" className="nav-link-simple">About</Link>
         <Link to="/careers" className="nav-link-simple">Careers</Link>
         <Link to="/blog" className="nav-link-simple">Blog</Link>
         <Link to="/updates" className="nav-link-simple">Updates</Link>
         <Link to="/contact" className="nav-link-simple">Contact</Link>
+        <Link to="/privacy" className="nav-link-simple">Privacy Policy</Link>
+        <Link to="/terms" className="nav-link-simple">Terms of Service</Link>
       </div>
 
       <div className="footer-meta" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
@@ -63,7 +67,9 @@ function AppContent() {
 
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/apply" element={<Apply />} />
           <Route path="/contact" element={<Contact />} />
+
           <Route path="/waitlist" element={<Waitlist />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
