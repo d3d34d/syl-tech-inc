@@ -113,7 +113,26 @@
 @media (max-width: 1024px) {
   .blog-post {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 }
+
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 120px 6% 60px;
+  }
+  
+  .post-title {
+    font-size: 2.2rem;
+  }
+  
+  .post-excerpt {
+    font-size: 1.05rem;
+  }
+  
+  .blog-container {
+    gap: 60px;
+  }
+}
+
 

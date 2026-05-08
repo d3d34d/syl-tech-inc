@@ -193,3 +193,28 @@
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-jet {
+    top: 16px;
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+  
+  .logo-text {
+    font-size: 0.95rem;
+  }
+  
+  .mobile-menu-content {
+    gap: 24px;
+    width: 100%;
+    padding: 0 40px;
+  }
+  
+  .mobile-nav-link {
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
