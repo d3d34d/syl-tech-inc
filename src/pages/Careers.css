@@ -165,13 +165,31 @@
 @media (max-width: 1024px) {
   .careers-layout {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
+  }
+  
+  .careers-info h1 {
+    font-size: 2.8rem;
   }
 }
 
 @media (max-width: 768px) {
+  .careers-page {
+    padding: 120px 6% 80px;
+  }
+
   .role-main h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+  }
+  
+  .role-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .role-header {
+    padding: 24px 0;
   }
 }
+
 

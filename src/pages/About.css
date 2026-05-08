@@ -175,8 +175,30 @@
 }
 
 @media (max-width: 768px) {
+  .about-page {
+    padding: 100px 0 80px;
+  }
+  
+  .about-hero {
+    margin-bottom: 48px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-body {
+    gap: 40px;
+  }
+  
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .team-card {
+    padding: 32px 24px;
   }
 }
+
 

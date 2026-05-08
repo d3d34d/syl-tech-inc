@@ -160,3 +160,26 @@
   .update-sidebar { align-items: flex-start; text-align: left; }
   .update-gallery { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .updates-page {
+    padding: 100px 6% 80px;
+  }
+  
+  .updates-header {
+    margin-bottom: 60px;
+  }
+  
+  .update-title {
+    font-size: 1.6rem;
+  }
+  
+  .update-description {
+    font-size: 1rem;
+  }
+  
+  .updates-timeline {
+    gap: 80px;
+  }
+}
+
