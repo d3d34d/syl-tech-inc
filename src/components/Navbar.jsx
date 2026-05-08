@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="logo">
           <SylLogo size={28} />
-          <span className="logo-text">Syl Tech</span>
+          <span className="logo-text desktop-only">Syl Tech</span>
         </Link>
 
         <div className="nav-links-desktop">
@@ -76,6 +76,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu-overlay ${isMobileMenuOpen ? 'show' : ''}`}>
+        <button className="mobile-close-btn" onClick={() => setIsMobileMenuOpen(false)}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
         <div className="mobile-menu-content">
           {navLinks.map((link) => (
             <Link 

@@ -187,7 +187,7 @@
 
 @media (max-width: 1024px) {
   .nav-links-desktop, .desktop-only {
-    display: none;
+    display: none !important;
   }
   .mobile-toggle {
     display: block;
@@ -202,7 +202,7 @@
   }
   
   .logo-text {
-    font-size: 0.95rem;
+    display: none !important;
   }
   
   .mobile-menu-content {
@@ -217,4 +217,22 @@
     justify-content: center;
   }
 }
+
+.mobile-close-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-close-btn:hover {
+  opacity: 1;
+}
+
 
