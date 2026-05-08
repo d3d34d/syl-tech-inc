@@ -1,0 +1,68 @@
+.careers-page {
+  padding: 150px 5% 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.careers-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+
+.careers-info h1 {
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+  letter-spacing: -1.5px;
+}
+
+.careers-info p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.roles-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-item {
+  padding: 32px 0;
+  border-bottom: 1px dashed var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s ease;
+  cursor: pointer;
+}
+
+.role-item:hover {
+  padding-left: 20px;
+}
+
+.role-item:hover .role-arrow path {
+  stroke: var(--text-primary);
+}
+
+.role-main h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.team-label {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .careers-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
