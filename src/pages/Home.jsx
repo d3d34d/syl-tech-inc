@@ -35,7 +35,6 @@ const Home = () => {
 
           <motion.div className="hero-actions" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.6, duration: 0.7 }}>
             <AnimatedButton text="Join Aura Waitlist" hoverText="Be the first" variant="primary" onClick={() => navigate('/waitlist')} />
-            <AnimatedButton text="Our Network" hoverText="Explore Syl Tech" variant="secondary" showPulse={false} />
           </motion.div>
 
         </div>
