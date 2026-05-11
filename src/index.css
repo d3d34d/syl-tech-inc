@@ -19,6 +19,12 @@
   --card-bg: #0a0a0a;
 }
 
+/* Hide Spline watermark and branding */
+[class*="spline-watermark"], 
+a[href*="spline.design"] {
+  display: none !important;
+}
+
 .syl-watermark {
   position: fixed;
   top: 50%;
