@@ -11,15 +11,15 @@ const Careers = () => {
     { 
       title: 'Marketing Lead', 
       team: 'Growth', 
-      location: 'Remote - Global',
+      location: 'Hybrid - Winnipeg, MB Canada',
       content: {
-        about: "We are seeking an experienced, technically sharp Marketing Lead to spearhead Syl Tech's growth in the creator economy. You will own performance, experimentation, and scaling of our multi-channel marketing portfolio, with the opportunity to shape how original creators find their voice in a crowded digital landscape.",
-        why: "You'll be part of a collaborative team that values creativity and ethical innovation. We provide access to significant growth tools and a culture that prioritizes original work over mass automation.",
+        about: "We are seeking an experienced, technically sharp Marketing Lead based in Winnipeg to spearhead Syl Tech's growth in the creator economy. Working closely with our founding team in a hybrid capacity, you will own performance, experimentation, and scaling of our multi-channel marketing portfolio.",
+        why: "You'll be part of a collaborative, local team that values creativity and ethical innovation. We provide access to significant growth tools and a hybrid culture that prioritizes original work over mass automation.",
         responsibilities: [
-          "Own day-to-day operations of our global growth program, managing campaigns against efficiency targets.",
+          "Own day-to-day operations of our growth program from our Winnipeg office, managing campaigns against efficiency targets.",
           "Design and execute high-velocity testing pipelines across bidding strategies, campaign structures, and creative assets.",
-          "Partner closely with engineering to maintain and improve attribution pipelines and signal quality.",
-          "Communicate performance and strategic trade-offs clearly to the founding team."
+          "Partner closely with local engineering to maintain and improve attribution pipelines and signal quality.",
+          "Communicate performance and strategic trade-offs clearly to the founding team in person."
         ],
         qualifications: [
           "A successful track record managing marketing campaigns at scale with demonstrated ROI.",
@@ -32,14 +32,14 @@ const Careers = () => {
     { 
       title: 'Design Engineer', 
       team: 'Design', 
-      location: 'Remote',
+      location: 'On-site - Winnipeg, MB Canada',
       content: {
-        about: "We're looking for a Design Engineer who lives at the intersection of aesthetic perfection and technical excellence. You will collaborate with our founders to implement ultra-high-fidelity interfaces that feel alive and responsive to human interaction.",
-        why: "At Syl Tech, design is not a layer; it is our foundation. You will have the freedom to push the boundaries of modern CSS and React performance while building tools that empower creators.",
+        about: "We're looking for a Design Engineer who lives at the intersection of aesthetic perfection and technical excellence. Working on-site in our Winnipeg headquarters, you will collaborate daily with our founders to implement ultra-high-fidelity interfaces that feel alive.",
+        why: "At Syl Tech, design is not a layer; it is our foundation. Being on-site allows for rapid prototyping, whiteboarding, and seamless communication to push the boundaries of modern CSS and React performance.",
         responsibilities: [
-          "Develop and maintain our core design system, ensuring pixel-perfect implementation across all screens.",
+          "Develop and maintain our core design system, ensuring pixel-perfect implementation alongside the design team.",
           "Craft sophisticated micro-interactions and animations that enhance user engagement without sacrificing speed.",
-          "Bridge the gap between design and engineering, translating high-fidelity prototypes into production-ready code.",
+          "Bridge the gap between design and engineering, translating high-fidelity prototypes into production-ready code in real-time.",
           "Optimize frontend performance to ensure lightning-fast experiences for our global users."
         ],
         qualifications: [
@@ -53,15 +53,15 @@ const Careers = () => {
     { 
       title: 'Backend Developer', 
       team: 'Engineering', 
-      location: 'Remote',
+      location: 'Remote - Americas',
       content: {
-        about: "We are seeking a Backend Developer to build the scalable services and ethical data pipelines that form the backbone of Syl Tech. You will design robust APIs and distributed systems that prioritize security, speed, and creator attribution.",
-        why: "You will solve complex architectural problems in an environment that values clean code and sustainable engineering. Your work will directly impact how creators protect and monetize their intellectual property.",
+        about: "We are seeking a fully remote Backend Developer within the Americas timezones to build the scalable services and ethical data pipelines that form the backbone of Syl Tech. You will design robust APIs and distributed systems synchronously with our core team.",
+        why: "Enjoy the flexibility of remote work while solving complex architectural problems in an environment that values clean code and sustainable engineering. Your work will directly impact how creators protect their intellectual property.",
         responsibilities: [
           "Design and implement high-performance APIs and microservices using Go and Node.js.",
-          "Architect distributed data pipelines that are both efficient and resilient.",
+          "Architect distributed data pipelines that are both efficient and resilient across cloud regions.",
           "Implement secure protocols for content attribution and creator rights management.",
-          "Optimize database performance and ensure data integrity across our global infrastructure."
+          "Optimize database performance and ensure data integrity across our infrastructure."
         ],
         qualifications: [
           "Significant experience building and scaling backend systems in a production environment.",
@@ -74,13 +74,13 @@ const Careers = () => {
     { 
       title: 'AI Engineer', 
       team: 'Engineering', 
-      location: 'Remote',
+      location: 'Remote - Global',
       content: {
-        about: "We are looking for an AI Engineer to architect the next generation of ethical content tools. You will own the development of our proprietary attribution engine, ensuring that generative models respect and reward original human creativity instead of exploiting it.",
-        why: "Join a mission-driven team where AI is built to empower, not replace. You will have the opportunity to solve the industry's most pressing ethical challenges while working with state-of-the-art models.",
+        about: "We are looking for an exceptional AI Engineer from anywhere in the world to architect the next generation of ethical content tools. You will own the development of our proprietary attribution engine, hunting for the best technical solutions regardless of borders.",
+        why: "Join our globally distributed AI research team where talent knows no borders. You will have the opportunity to solve the industry's most pressing ethical challenges while working with state-of-the-art models on a flexible schedule.",
         responsibilities: [
           "Develop and optimize models for content attribution, origin tracking, and intellectual property protection.",
-          "Collaborate with backend and design teams to integrate AI services into seamless, human-centric workflows.",
+          "Collaborate asynchronously with global backend and design teams to integrate AI services into seamless workflows.",
           "Monitor model performance and implement rigorous fairness and safety benchmarks.",
           "Stay at the forefront of AI research to identify new opportunities for ethical innovation."
         ],
