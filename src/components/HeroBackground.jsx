@@ -11,7 +11,8 @@ export const HeroBackground = () => {
       width: '100%',
       height: '100%',
       zIndex: 0,
-      overflow: 'hidden'
+      overflow: 'hidden',
+      touchAction: 'none'
     }}>
       <Suspense fallback={<div className="spline-loading" style={{ width: '100%', height: '100%', background: '#000' }} />}>
         <Spline
