@@ -40,7 +40,7 @@ export function Menu({ trigger, children, align = "left", showChevron = true }) 
 export function MenuItem({ children, onClick, disabled = false, icon, isActive = false }) {
   return (
     <button
-      className={`relative block w-full h-16 text-center group
+      className={`relative block w-[48px] h-[48px] text-center group
         ${disabled ? "text-gray-400 dark:text-gray-500 cursor-not-allowed" : "text-gray-600 dark:text-gray-300"}
         ${isActive ? "bg-white/10" : ""}
       `}
@@ -74,12 +74,12 @@ export function MenuContainer({ children }) {
   };
 
   return (
-    <div className="relative w-[64px]" data-expanded={isExpanded}>
+    <div className="relative w-[48px]" data-expanded={isExpanded}>
       {/* Container for all items */}
       <div className="relative">
         {/* First item - always visible */}
         <div 
-          className="relative w-16 h-16 bg-[#1a1a1a] cursor-pointer rounded-full group will-change-transform z-50 border border-[rgba(255,255,255,0.1)] flex items-center justify-center shadow-lg"
+          className="relative w-[48px] h-[48px] bg-[#1a1a1a] cursor-pointer rounded-full group will-change-transform z-50 border border-[rgba(255,255,255,0.1)] flex items-center justify-center shadow-lg"
           onClick={handleToggle}
         >
           {childrenArray[0]}
@@ -89,9 +89,9 @@ export function MenuContainer({ children }) {
         {childrenArray.slice(1).map((child, index) => (
           <div 
             key={index} 
-            className="absolute top-0 left-0 w-16 h-16 bg-[#1a1a1a] border border-[rgba(255,255,255,0.1)] rounded-full will-change-transform flex items-center justify-center shadow-lg"
+            className="absolute top-0 left-0 w-[48px] h-[48px] bg-[#1a1a1a] border border-[rgba(255,255,255,0.1)] rounded-full will-change-transform flex items-center justify-center shadow-lg"
             style={{
-              transform: `translateY(${isExpanded ? (index + 1) * 72 : 0}px)`,
+              transform: `translateY(${isExpanded ? (index + 1) * 56 : 0}px)`,
               opacity: isExpanded ? 1 : 0,
               zIndex: 40 - index,
               clipPath: index === childrenArray.length - 2 
