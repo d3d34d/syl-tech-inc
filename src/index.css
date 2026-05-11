@@ -20,6 +20,8 @@
 }
 
 /* Hide Spline watermark and branding */
+#spline-watermark,
+.spline-watermark,
 [class*="spline-watermark"], 
 a[href*="spline.design"] {
   display: none !important;
