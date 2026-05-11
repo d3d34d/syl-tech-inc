@@ -7,7 +7,7 @@ const DEFAULT_MEMBERS = [
     id: '1',
     name: 'Akbor Chowdhury',
     role: 'CO-FOUNDER',
-    image: '/akbor.png',
+    image: '/akbor.jpg',
     social: { linkedin: 'https://www.linkedin.com/in/akbor-chowdhury/' },
   },
 
