@@ -18,7 +18,7 @@ const DEFAULT_MEMBERS = [
     image: '/dhibo.png',
     social: { 
       linkedin: 'https://www.linkedin.com/in/d3d34d/',
-      behance: 'https://d3-d34d.vercel.app/' 
+      portfolio: 'https://d3-d34d.vercel.app/' 
     },
   },
 
@@ -138,7 +138,7 @@ function MemberRow({
 }) {
   const isActive = hoveredId === member.id;
   const isDimmed = hoveredId !== null && !isActive;
-  const hasSocial = member.social?.twitter ?? member.social?.linkedin ?? member.social?.instagram ?? member.social?.behance;
+  const hasSocial = member.social?.twitter ?? member.social?.linkedin ?? member.social?.instagram ?? member.social?.behance ?? member.social?.portfolio;
 
   return (
     <div
@@ -212,16 +212,16 @@ function MemberRow({
                 <FaInstagram size={10} />
               </a>
             )}
-            {member.social?.behance && (
+            {member.social?.portfolio && (
               <a
-                href={member.social.behance}
+                href={member.social.portfolio}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="p-1 rounded text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-150 hover:scale-110"
-                title="Behance"
+                className="p-1 rounded text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-150 hover:scale-110 flex items-center justify-center"
+                title="Personal Portfolio"
               >
-                <FaBehance size={10} />
+                <img src="/dhibo-logo.svg" alt="Portfolio" style={{ width: 10, height: 10, borderRadius: 2 }} />
               </a>
             )}
           </div>
