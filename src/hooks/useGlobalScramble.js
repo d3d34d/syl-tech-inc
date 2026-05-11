@@ -14,6 +14,7 @@ const SKIP_CLASSES = ['nav-badge','logo-text','step-number','badge','fill','bar'
 function shouldSkip(el) {
   if (!el || el.nodeType !== Node.ELEMENT_NODE) return false;
   if (el.closest?.('[data-no-scramble]')) return true;
+  if (el.closest?.('.animated-btn')) return true; // Explicitly skip animated buttons
   if (['INPUT','TEXTAREA','CODE','PRE','SELECT','BUTTON','SVG','PATH','IMG','BR'].includes(el.tagName)) return true;
   for (const cls of SKIP_CLASSES) {
     if (el.classList?.contains(cls)) return true;
@@ -139,6 +140,9 @@ export function useGlobalScramble() {
     function onMouseOver(e) {
       const target = e.target;
       
+      // Restrict effect ONLY to navigation bar
+      if (!target || !target.closest || !target.closest('.navbar-jet')) return;
+
       // If we're hovering a word, scramble it
       if (target.classList?.contains('scramble-word')) {
         startScramble(target);
