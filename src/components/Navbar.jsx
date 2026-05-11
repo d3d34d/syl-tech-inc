@@ -31,9 +31,9 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   const navLinks = [
+    { name: 'About', path: '/about' },
     { name: 'Blog', path: '/blog' },
     { name: 'Updates', path: '/updates' },
-    { name: 'About', path: '/about' },
     { name: 'Careers', path: '/careers', badge: '4' },
 
   ];
@@ -72,9 +72,9 @@ const Navbar = () => {
           <div className="mobile-toggle">
             <MenuContainer>
               <MenuItem icon={<MenuIcon size={24} />} />
+              <MenuItem icon={<Info size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/about'); }} />
               <MenuItem icon={<BookOpen size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/blog'); }} />
               <MenuItem icon={<Bell size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/updates'); }} />
-              <MenuItem icon={<Info size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/about'); }} />
               <MenuItem icon={<Briefcase size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/careers'); }} />
               <MenuItem icon={<Mail size={20} />} onClick={() => { setIsMobileMenuOpen(false); navigate('/contact'); }} />
             </MenuContainer>
