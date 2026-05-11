@@ -26,6 +26,11 @@
   max-width: 820px;
   margin: 0 auto;
   color: #ffffff;
+  pointer-events: none; /* Allow interaction with Spline background in gaps */
+}
+
+.hero-content > * {
+  pointer-events: auto; /* Re-enable interaction for buttons and text */
 }
 
 
