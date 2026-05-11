@@ -1,8 +1,34 @@
-import React, { Suspense, lazy } from 'react';
-
-const Spline = lazy(() => import('@splinetool/react-spline'));
+import React, { Suspense, useEffect } from 'react';
+import Spline from '@splinetool/react-spline';
 
 export const HeroBackground = () => {
+  useEffect(() => {
+    // Attempt to hide the Spline watermark inside the Shadow DOM
+    const hideSplineBranding = () => {
+      const splineViewers = document.querySelectorAll('spline-viewer');
+      splineViewers.forEach(viewer => {
+        if (viewer.shadowRoot) {
+          const watermark = viewer.shadowRoot.querySelector('#spline-watermark');
+          if (watermark) {
+            watermark.style.display = 'none';
+            watermark.style.opacity = '0';
+            watermark.style.pointerEvents = 'none';
+            watermark.style.visibility = 'hidden';
+          }
+        }
+      });
+    };
+
+    // Run multiple times to catch it when it loads
+    const interval = setInterval(hideSplineBranding, 500);
+    const timeout = setTimeout(() => clearInterval(interval), 10000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, []);
+
   return (
     <div className="hero-background-spline" style={{
       position: 'absolute',
