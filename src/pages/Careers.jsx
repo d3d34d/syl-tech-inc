@@ -74,7 +74,7 @@ const Careers = () => {
     { 
       title: 'AI Engineer', 
       team: 'Engineering', 
-      location: 'Remote - Global',
+      location: 'Remote - Canada',
       content: {
         about: "We are looking for an exceptional AI Engineer from anywhere in the world to architect the next generation of ethical content tools. You will own the development of our proprietary attribution engine, hunting for the best technical solutions regardless of borders.",
         why: "Join our globally distributed AI research team where talent knows no borders. You will have the opportunity to solve the industry's most pressing ethical challenges while working with state-of-the-art models on a flexible schedule.",
@@ -85,7 +85,7 @@ const Careers = () => {
           "Stay at the forefront of AI research to identify new opportunities for ethical innovation."
         ],
         qualifications: [
-          "Strong background in machine learning, specifically in areas related to content analysis and computer vision.",
+          "Background in Computer Science, specifically in areas related to content analysis and computer vision.",
           "Experience with modern deep learning frameworks (PyTorch, TensorFlow) and large-scale model deployment.",
           "Proven ability to translate complex ethical requirements into technical solutions.",
           "A deep-seated belief that technology must serve human creativity and the health of our planet."
