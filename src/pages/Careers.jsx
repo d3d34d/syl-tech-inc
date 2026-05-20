@@ -91,8 +91,38 @@ const Careers = () => {
           "A deep-seated belief that technology must serve human creativity and the health of our planet."
         ]
       }
+    },
+    { 
+      title: 'Lead AI Engineer', 
+      team: 'Engineering', 
+      location: 'Winnipeg, Manitoba (Hybrid — SYL Tech headquarters)',
+      content: {
+        about: "SYL Tech Inc. is seeking a Lead AI Engineer to lead the continued technical development and commercial scaling of AURA, our proprietary multi-model AI social video platform. AURA includes a built-in content attribution engine and an automated creator royalty system that compensates original creators when AI systems recreate their content. This is a senior, hands-on engineering role centred on an existing, live platform. The successful candidate will be the technical lead responsible for taking AURA from its current deployed state to full commercial readiness, while establishing the engineering standards and team that will support the platform's growth in Canada.\n\nAbout AURA: AURA is a Canadian-origin AI platform deployed on Google Cloud infrastructure. It is built around a novel model: real creators upload original video content, other users and AI systems can recreate that content using AURA's multi-model AI pipeline, and the original creators automatically earn royalties whenever their work is used as source material. AURA's content attribution engine ensures every AI-generated output is traced back to its original human creator.",
+        why: "At SYL Tech, you will lead the engineering of a platform built on a simple conviction: that technology must serve human creativity and protect the economic rights of creators. You will own the technical direction of a live product at a pivotal stage, build a Canadian engineering team from the ground up, and help establish Canada as a home for ethical, creator-first AI innovation.\n\nEmployment type: Full-time, 40 hours per week\nCompensation: $110,000 CAD per year\nReports to: Hiring Manager, SYL Tech Inc.\n\nHow to Apply: Qualified candidates may submit a résumé, portfolio of deployed AI projects, and a brief cover letter to SYL Tech Inc. at 707 Warsaw Ave, Winnipeg, MB R3M 1B5. SYL Tech Inc. is an equal opportunity employer committed to building a diverse and inclusive Canadian workforce.",
+        responsibilities: [
+          "Lead the architectural design and continued technical development of the AURA platform's multi-model AI pipeline, including model orchestration, content fingerprinting, and attribution scoring.",
+          "Develop and refine the proprietary content attribution engine that links AI-generated outputs to original creator source material.",
+          "Build and maintain the automated creator royalty enforcement system, ensuring accurate attribution and payment workflows.",
+          "Architect and maintain the cloud infrastructure supporting platform scalability, including deployment on Google Cloud Run and equivalent infrastructure.",
+          "Conduct performance monitoring, fairness benchmarking, and safety evaluation of deployed AI models to ensure ethical operation.",
+          "Integrate third-party AI services and APIs into the platform's broader system architecture.",
+          "Establish technical standards, documentation, and engineering best practices for the platform and the engineering team.",
+          "Lead technical planning for the platform's commercial release and ongoing product development roadmap.",
+          "Recruit, mentor, and supervise junior Canadian engineering staff as the team scales, transferring specialized AI platform knowledge into the Canadian workforce."
+        ],
+        qualifications: [
+          "A bachelor's degree or diploma in computer and communication, computer science, or a related discipline. Programs combining computing with communication, media, or content systems are particularly relevant given the platform's focus on AI-driven video content and creator attribution.",
+          "Direct experience as the original architect and developer of a production AI platform, with hands-on responsibility from initial design through to live deployment.",
+          "Proven ability to design, deploy, and operate AI applications in production, including experience with Google Cloud Run and equivalent cloud infrastructure.",
+          "Working proficiency in Python and integration of deep learning frameworks such as PyTorch and TensorFlow.",
+          "Practical experience with multi-model AI orchestration, content attribution architecture, and integration of multiple AI services into a unified system.",
+          "A working understanding of content systems, digital media, and creator-focused product design applied to AI tools that interact with original video content.",
+          "Knowledge of privacy-preserving system design, including k-anonymity and cryptographic attribution, supported by deployed projects.",
+          "Demonstrated experience shipping full-stack applications across front-end, back-end, and cloud components.",
+          "Strong professional English proficiency."
+        ]
+      }
     }
-
   ];
 
   const toggleRole = (index) => {
