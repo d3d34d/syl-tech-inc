@@ -4,6 +4,7 @@ import { SylLogo } from './SylLogo';
 import AnimatedButton from './AnimatedButton';
 import { BookOpen, Bell, Info, Briefcase, Mail, Menu as MenuIcon } from 'lucide-react';
 import { MenuContainer, MenuItem } from './ExpandableMenu';
+import { roles } from '../data/roles';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -34,8 +35,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Blog', path: '/blog' },
     { name: 'Updates', path: '/updates' },
-    { name: 'Careers', path: '/careers', badge: '4' },
-
+    { name: 'Careers', path: '/careers', badge: roles.length.toString() },
   ];
 
 
